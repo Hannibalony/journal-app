@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Journal</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     <div class="panel panel-default">
+    <div class="panel-heading"><span>mybook</span>
+    <ul>
+      <li><%= link_to 'Entries', entries_path %></li>
+      <li><a href="https://github.com/Hannibalony">GitHub</a></li>
+      </ul></div>
+      </div>
+    <%= yield %>
+  </body>
+</html>
