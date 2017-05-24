@@ -10,10 +10,11 @@
 
   <body>
      <div class="panel panel-default">
-    <div class="panel-heading"><span>mybook</span>
+    <div class="panel-heading"><span><%= link_to 'mybook', root_path %></span>
     <ul>
       <li><%= link_to 'Entries', entries_path %></li>
-      <li><a href="https://github.com/Hannibalony">GitHub</a></li>
+      <li><a href="https://github.com/Hannibalony" target="_blank">GitHub</a></li>
+      <li><%= link_to 'Login', login_user_path %></li>
       </ul></div>
       </div>
     <%= yield %>
