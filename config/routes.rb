@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'accounts/new'
+
+  get 'signup/new'
+
   get 'login/user'
 
   get 'entries/index'
